@@ -1,0 +1,40 @@
+$button-bg-color:#f23543;
+$button-text-color:#ffffff;
+$button-padding:8px 12px;
+$button-hover-color:#77070e;
+$button-border-redius:5px;
+$button-value:none;
+$font-size:20px;
+$font-family:sans-serif;
+@mixin simple-button{
+    background: $button-bg-color;
+    color: $button-text-color;
+    padding: $button-padding;
+    border-radius: $button-border-redius ;
+    border:$button-value ;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+header{
+
+    .fb,.Youtube{
+
+       
+            background: $button-bg-color;
+            color: $button-text-color;
+            padding: $button-padding;
+            border-radius: $button-border-redius ;
+            border:$button-value ;
+            font-size: $font-size;
+            font-family: $font-family;
+            &:hover{
+                background:$button-hover-color;
+            
+        }
+    }
+    .Youtub{
+        @include simple-button;
+        background: green;
+    }
+    
+}
